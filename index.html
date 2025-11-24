@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ray Zine – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- BARRE DU HAUT -->
+  <header class="top-bar">
+    <div class="logo-3d">
+      <span class="logo-main">RAY</span>
+      <span class="logo-sub">zine</span>
+    </div>
+    <nav class="main-nav">
+      <button class="nav-link" data-page-target="cover">Accueil</button>
+      <button class="nav-link" data-page-target="about">Moi</button>
+      <button class="nav-link" data-page-target="dream">Dream Project</button>
+      <button class="nav-link" data-page-target="licence">Licence</button>
+      <button class="nav-link" data-page-target="art">Art</button>
+      <button class="nav-link" data-page-target="luffy">Luffy</button>
+    </nav>
+  </header>
+
+  <main class="desk-bg">
+    <!-- Stickers flottants autour du carnet (purement déco) -->
+    <div class="desk-sticker sticker-star"></div>
+    <div class="desk-sticker sticker-flower"></div>
+    <div class="desk-sticker sticker-arrow"></div>
+    <div class="desk-sticker sticker-button"></div>
+
+    <section class="notebook-wrapper">
+      <div class="notebook" id="notebook">
+        <!-- COUVERTURE / PAGE 1 -->
+        <article class="spread spread-cover active" data-page="cover">
+          <div class="spread-inner">
+            <div class="page left-page cover-left">
+              <div class="cover-doodle-heart">✦</div>
+              <p class="tiny-label">édition 01 • portfolio</p>
+              <h1 class="cover-title">Rayanna</h1>
+              <p class="cover-tagline">
+                Étudiante en sciences de l’éducation • responsable communication
+                • future prof qui collectionne les carnets et les projets.
+              </p>
+              <button class="btn-main" data-page-target="about">
+                ouvrir le carnet
+              </button>
+            </div>
+
+            <div class="page right-page cover-right">
+              <div class="polaroid zoomable">
+                <!-- Remplace l’URL par TA photo plus tard -->
+                <img src="https://via.placeholder.com/260x320"
+                     alt="Portrait de Rayanna style polaroid">
+                <span class="polaroid-caption">about me</span>
+              </div>
+
+              <div class="sticker-note zoomable">
+                <p>
+                  Clique sur les petits éléments pour zoomer <br>
+                  et feuilleter mon univers ✿
+                </p>
+              </div>
+
+              <div class="arrow-label">
+                <span>tourner la page</span>
+                <button class="page-arrow" data-direction="next">→</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PAGE 2 : MOI -->
+        <article class="spread" data-page="about">
+          <div class="spread-inner">
+            <div class="page left-page">
+              <div class="page-header-strip">
+                <h2 class="page-title">portrait</h2>
+                <span class="page-tag">ray edition</span>
+              </div>
+
+              <div class="torn-paper zoomable">
+                <p>
+                  Je m’appelle <strong>Rayanna</strong>. Je suis en licence de
+                  sciences de l’éducation et j’apprends à décoder comment on
+                  grandit, comment on apprend et comment on peut mieux enseigner.
+                </p>
+                <p>
+                  Mon objectif : devenir <strong>prof des écoles</strong>, créer
+                  des classes où l’on se sent en sécurité, et lancer des projets
+                  qui donnent envie de croire en soi et en ses rêves.
+                </p>
+              </div>
+            </div>
+
+            <div class="page right-page">
+              <h3 class="small-title">ce qui me définit un peu</h3>
+              <ul class="styled-list tag-list">
+                <li>pédagogie & curiosité</li>
+                <li>communication & storytelling</li>
+                <li>humanitaire & développement personnel</li>
+                <li>écriture, peinture, carnets partout</li>
+              </ul>
+
+              <div class="tape-card zoomable">
+                <p>
+                  Ce site est un <strong>zine digital</strong> :
+                  une sorte de magazine / carnet où chaque page colle une
+                  partie de mon histoire.
+                </p>
+              </div>
+
+              <div class="arrow-label">
+                <button class="page-arrow" data-direction="prev">←</button>
+                <span>page suivante</span>
+                <button class="page-arrow" data-direction="next">→</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PAGE 3 : DREAM PROJECT -->
+        <article class="spread" data-page="dream">
+          <div class="spread-inner">
+            <div class="page left-page">
+              <div class="page-header-strip">
+                <h2 class="page-title">dream project</h2>
+                <span class="page-tag">asso & com’</span>
+              </div>
+
+              <div class="scrap-card zoomable">
+                <h3>l’asso qui m’a fait aimer la com’</h3>
+                <p>
+                  Dream Project mêle <strong>humanitaire</strong> &
+                  <strong>développement personnel</strong>. On crée des
+                  formations et des Dreamboxes, et avec ce que ça génère,
+                  on finance des missions solidaires.
+                </p>
+              </div>
+
+              <div class="list-pill">
+                <h4>dans le pôle communication je…</h4>
+                <ul class="styled-list">
+                  <li>imagine des concepts de posts & stories</li>
+                  <li>écris captions, scripts et textes inspirants</li>
+                  <li>co-construis avec la vidéaste & l’équipe</li>
+                  <li>transforme les actions en histoires à raconter</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="page right-page">
+              <h3 class="small-title">quelques “dossiers” com’</h3>
+              <div class="mini-gallery">
+                <div class="mini-card zoomable">
+                  <span class="pill">behind the dream</span>
+                  <p>
+                    Une série de vlogs / stories qui montre les coulisses
+                    des missions, montages, doutes et fous rires.
+                  </p>
+                </div>
+
+                <div class="mini-card zoomable">
+                  <span class="pill">posts pédagogiques</span>
+                  <p>
+                    Des carrousels qui vulgarisent le développement personnel,
+                    la confiance, l’engagement associatif.
+                  </p>
+                </div>
+
+                <div class="mini-card zoomable">
+                  <span class="pill">identité visuelle</span>
+                  <p>
+                    Travail sur les couleurs, les typos, l’univers du compte
+                    pour qu’il reste doux, motivant et cohérent.
+                  </p>
+                </div>
+              </div>
+
+              <div class="arrow-label">
+                <button class="page-arrow" data-direction="prev">←</button>
+                <span>continuer</span>
+                <button class="page-arrow" data-direction="next">→</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PAGE 4 : LICENCE & ENSEIGNER -->
+        <article class="spread" data-page="licence">
+          <div class="spread-inner">
+            <div class="page left-page">
+              <div class="page-header-strip">
+                <h2 class="page-title">licence sde</h2>
+                <span class="page-tag">envie d’enseigner</span>
+              </div>
+
+              <div class="torn-paper zoomable">
+                <p>
+                  Ma licence me donne des bases en
+                  <strong>psychologie, pédagogie, histoire de l’éducation</strong>,
+                  mais aussi en musique, EPS, pratiques de classe…
+                </p>
+                <p>
+                  Ce que j’apprends nourrit ma façon de voir les élèves :
+                  je veux repérer ceux qui se sentent “en bas” et leur
+                  montrer qu’ils sont capables.
+                </p>
+              </div>
+            </div>
+
+            <div class="page right-page">
+              <h3 class="small-title">ma future classe, je la vois…</h3>
+              <ul class="styled-list">
+                <li>bienveillante, avec le droit à l’erreur</li>
+                <li>créative : écriture, arts visuels, projets</li>
+                <li>connectée au réel & à la solidarité</li>
+                <li>remplie de carnets, affiches, petits rituels</li>
+              </ul>
+
+              <div class="postit zoomable">
+                <p>
+                  J’aimerais être une enseignante qui mélange pédagogie,
+                  communication et projets solidaires, sans perdre la part
+                  de jeu et de magie.
+                </p>
+              </div>
+
+              <div class="arrow-label">
+                <button class="page-arrow" data-direction="prev">←</button>
+                <span>page art</span>
+                <button class="page-arrow" data-direction="next">→</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PAGE 5 : ART (ÉCRITURE & PEINTURE) -->
+        <article class="spread" data-page="art">
+          <div class="spread-inner">
+            <div class="page left-page">
+              <div class="page-header-strip">
+                <h2 class="page-title">art & carnets</h2>
+                <span class="page-tag">écriture & peinture</span>
+              </div>
+
+              <div class="polaroid wide zoomable">
+                <!-- Remplace par une photo de tes peintures / pages -->
+                <img src="https://via.placeholder.com/320x200"
+                     alt="Peintures ou pages de carnet">
+                <span class="polaroid-caption">studio créatif</span>
+              </div>
+
+              <p class="page-text">
+                J’écris des textes introspectifs, des bouts de livres,
+                des phrases qui restent dans un coin de carnet. Je peins,
+                je découpe, je colle — c’est mon moyen de mettre de l’ordre
+                dans ce que je ressens.
+              </p>
+            </div>
+
+            <div class="page right-page">
+              <h3 class="small-title">ce que je crée souvent</h3>
+              <ul class="styled-list">
+                <li>textes sur le rapport à soi, aux autres, aux rêves</li>
+                <li>pages façon zine, avec collages & couleurs</li>
+                <li>idées de livres mêlant récit et développement perso</li>
+              </ul>
+
+              <div class="tape-card zoomable">
+                <p>
+                  L’art est mon espace pour déposer études, asso, émotions,
+                  doutes… et les transformer en quelque chose de plus doux.
+                </p>
+              </div>
+
+              <div class="arrow-label">
+                <button class="page-arrow" data-direction="prev">←</button>
+                <span>le vrai boss arrive</span>
+                <button class="page-arrow" data-direction="next">→</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PAGE 6 : LUFFY -->
+        <article class="spread" data-page="luffy">
+          <div class="spread-inner">
+            <div class="page left-page">
+              <div class="page-header-strip">
+                <h2 class="page-title">luffy</h2>
+                <span class="page-tag">mascotte</span>
+              </div>
+
+              <div class="polaroid zoomable">
+                <!-- Remplace par une vraie photo de Luffy -->
+                <img src="https://via.placeholder.com/260x260"
+                     alt="Luffy, chat européen gris et blanc">
+                <span class="polaroid-caption">hyperactif & câlin</span>
+              </div>
+
+              <p class="page-text">
+                Luffy, chat européen gris et blanc, <strong>3 ans</strong>.
+                Hyperactif, grimpe partout, mais aussi très câlin quand je
+                travaille. Il a validé (ou pas) chaque page de ce portfolio.
+              </p>
+            </div>
+
+            <div class="page right-page">
+              <h3 class="small-title">fiche signalétique</h3>
+              <ul class="styled-list">
+                <li>rôle : co-auteur non officiel de tous mes projets</li>
+                <li>talent : marcher sur le clavier au pire moment</li>
+                <li>super pouvoir : lancer des sessions ronron-thérapie</li>
+              </ul>
+
+              <div class="postit small zoomable">
+                <p>
+                  Si tu vois des poils de chat dans mes carnets, c’est lui.
+                </p>
+              </div>
+
+              <div class="arrow-label">
+                <button class="page-arrow" data-direction="prev">←</button>
+                <span>retour à la couverture</span>
+                <button class="page-arrow" data-page-target="cover">↻</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 – Ray Zine • Portfolio de Rayanna</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
